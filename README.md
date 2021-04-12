@@ -1,7 +1,7 @@
 # holy-parser
-Thsi is holy parser
-God did not varibales
-God wanted men
-Strong like men
-Holy parser brings you
-Holy script
+Thsi is holy parser</br>
+God did not varibales</br>
+God wanted men</br>
+Strong like men</br>
+Holy parser brings you</br>
+Holy script</br>
