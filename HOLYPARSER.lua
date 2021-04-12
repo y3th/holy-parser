@@ -5,30 +5,35 @@
 -- Rust is a sin and people should stop using it because jesus is against rust because rust can kill people
 -- because of the pollution in the material
 
-local Players = game:GetService("Players");
-local Teams = game:GetService("Teams");
+local Players = game:GetService("Players"); -- This is high defniition get player service with game:GetService insteda of Game.Players
+local Teams = game:GetService("Teams"); -- This is high fidelity Teams server with get game:GetService instead of Game.Team
 
-local annoy_script_defs = {};
+local annoy_script_defs = {}; -- This is high tech definition table of annoy script of annoy script tm
+
+-- This reminds me of std::iterator<class Category,class T,class Distance = std::ptrdiff_t,class Pointer = T*,class Reference = T&>
+local function pairs(tbl) -- This is a hightech iterartor function
+	return next,tbl -- Jesus says next is much faster than pairs so we are microoptimizing pairs by making it next because it is cool
+end
 
 -- This reminds me of static std::function<std::string,std::string> newindex(std::map<std::string,std::string> tbl, std::string key, std::string value)
 local function newindex(tbl,key,value)  -- This is a high tech new index function
 	tbl[key]=value;						 -- Jesus encorporated function do not steal 20201
-	return function(...)
+	return function(...) -- We Are using vararg here becaus ewe are going to have variable amount of arguments
 		newindex(tbl,...);
 	end
 end
 
 -- This reminds me of static std::string index(std::map<std::string,std::string> tbl, std::string key)
 local function index(tbl,key) -- Hi tech index function
-	return tbl[key];
+	return tbl[key]; -- Index is very slow so we are optimizating it by making it a fnuciton
 end
 
 -- This reminds me of static std::vector<std::string> check_eq(std::list<Player> arr, std::string delim)
 local function check_eq(arr,delim) -- This is O(log n) Very efficient algoirhm
-	local eq={};
+	local eq={}; -- This is not Aufio Equalization, it is Eq Table
 	for _,v in pairs(arr)do
 		if(v.Name:lower():sub(1,#delim)==delim:lower())then-- Using the power of if statement and thing is poosible!
-			table.insert(eq,1,v); 
+			table.insert(eq,1,v); -- We are not inserting v into Autio Equalitzation, we are adding it to Eq Table
 		end
 	end
 	return eq;
@@ -39,7 +44,7 @@ end
 local function expect(fn)
 	local args={};
 	local env={};
-	function env.arg(ty) -- Help it says null ptr???
+	function env.arg(ty) -- Help it says null ptr??? I cannot help you
 		table.insert(args,ty);
 		return env;
 	end
@@ -131,6 +136,7 @@ function annoy_script_defs:select(selector, isRandom)
 	end)();
 end
 
+-- This is not rust this is Cp lus plus
 expect("do_annoy").arg("number").arg("number").arg("number").arg("string").apply();
 expect("bind").arg("string").arg("number").arg("number").arg("number").arg("string").apply();
 
@@ -151,6 +157,7 @@ local function parse_annoy_script(str)
 	end
 end
 
+--- This is the PArse annoy script it parses the script
 parse_annoy_script([[
 	# Welcome to HOLY SCRIPT
 	# After 9 years in development,
